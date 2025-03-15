@@ -57,6 +57,7 @@ pip install -r requirements.txt
 ```
 
 ## Run
+---
 Run the Streamlit app using:
 ```bash
 streamlit run main.py
@@ -65,10 +66,24 @@ alternatively
 ```bash
 python -m streamlit run main.py
 ```
+
+## File Structure
+```
+EmailParserbot/
+│── app.py           # Streamlit UI and application logic
+│── main.py           # Contains all the parsing and database functions
+│── emails.db         # SQLite database (created after initialization)
+│── requirements.txt  # List of Python dependencies
+│── README.md         # This file
+```
+
+
 ## Troubleshooting
-. If you encounter a sqlite3.OperationalError, ensure you have write permissions in the directory.
-. For ModuleNotFoundError, verify that you've activated the virtual environment and installed all dependencies.
+---
+- If you encounter a sqlite3.OperationalError, ensure you have write permissions in the directory.
+- For ModuleNotFoundError, verify that you've activated the virtual environment and installed all dependencies.
 ## Future Enhancements
+---
 * Add support for multiple email formats (e.g., .msg, .eml)
 * Implement email content analysis features
 * Create a user interface for easier interaction with the parser
