@@ -17,10 +17,10 @@ Python 3.7 or higher & pip
 ## Installation
 ---
 ### Step 1: Clone the Repository
-''' bash
+``` bash
 git clone https://github.com/chandibhandari1/EmailParserbot.git
 cd EmailParserbot
-'''
+```
 
 Step1 :install virtual env
 ---
