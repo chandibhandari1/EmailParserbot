@@ -66,6 +66,9 @@ alternatively
 ```bash
 python -m streamlit run main.py
 ```
+## How to Use
+1. upload the .eml file.
+2. Extracted emails will be displayed on the screen.
 
 ## File Structure
 ```
