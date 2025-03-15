@@ -31,14 +31,21 @@ cd EmailParserbot
 ---
 Create your own virtual env, if you already have one you can use the existing one by simply activating it. Here myenv1 is the name of your virtual environment
 
-```bash python -m venv myenv1 ```
+- create a virtual env named: myenv1
 
-step 2: activate virtual env
+``` bash 
+python -m venv myenv1 
+```
 
-if in MacOS
-(source myenv1/bin/activate)
-if in window
-(myenv1\Scripts\activate)
+- activate virtual env
+ -- if in MacOS
+``` bash
+source myenv1/bin/activate
+```
+-- for window
+``` bash 
+myenv1\Scripts\activate
+```
 (note: if you want to deactivate: type: deactive)
 
 
