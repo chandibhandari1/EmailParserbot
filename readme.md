@@ -39,11 +39,11 @@ python -m venv myenv1
 
 - activate virtual env
 
- -- if in MacOS
+    For MacOS
 ``` bash
 source myenv1/bin/activate
 ```
--- for window
+    For window
 ``` bash 
 myenv1\Scripts\activate
 ```
