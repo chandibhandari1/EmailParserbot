@@ -1,6 +1,7 @@
 import sqlite3
 import mailparser
 import os
+import json
 
 def init_db():
     with sqlite3.connect('emails.db') as conn:
@@ -23,11 +24,15 @@ def init_db():
 def parse_email(file_path):
     mail = mailparser.parse_from_file(file_path)
     
+    # Convert sender and receiver to strings
+    sender = ', '.join(mail.from_) if isinstance(mail.from_, list) else str(mail.from_)
+    receiver = ', '.join(mail.to) if isinstance(mail.to, list) else str(mail.to)
+    
     with sqlite3.connect('emails.db') as conn:
         c = conn.cursor()
         c.execute('''INSERT INTO emails (subject, sender, receiver, body)
                      VALUES (?, ?, ?, ?)''',
-                  (mail.subject, mail.from_, mail.to, mail.body))
+                  (mail.subject, sender, receiver, mail.body))
         
         email_id = c.lastrowid
         
