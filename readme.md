@@ -19,11 +19,11 @@ Python 3.7 or higher & pip
 ### Step 1: Clone the Repository
 - clone repo: 
 Go to the terminal and past the following code.
-``` bash
+```bash
 git clone https://github.com/chandibhandari1/EmailParserbot.git
 ```
 - go to the directory
-``` bash
+```bash
 cd EmailParserbot
 ```
 
@@ -33,20 +33,39 @@ Create your own virtual env, if you already have one you can use the existing on
 
 - create a virtual env named: myenv1
 
-``` bash 
+```bash 
 python -m venv myenv1 
 ```
 
 - activate virtual env
 
-    For MacOS
-``` bash
+1 . For MacOS
+```bash
 source myenv1/bin/activate
 ```
-    For window
-``` bash 
+    
+2.  For window
+```bash 
 myenv1\Scripts\activate
 ```
 (note: if you want to deactivate: type: deactive)
+
+### Step 3: Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run
+Run the Streamlit app using:
+```bash
+streamlit run main.py
+```
+alternatively
+```bash
+python -m streamlit run main.py
+```
+
+
 
 
