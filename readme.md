@@ -38,6 +38,7 @@ python -m venv myenv1
 ```
 
 - activate virtual env
+
  -- if in MacOS
 ``` bash
 source myenv1/bin/activate
