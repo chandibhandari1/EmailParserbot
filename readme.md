@@ -76,7 +76,15 @@ EmailParserbot/
 │── requirements.txt  # List of Python dependencies
 │── README.md         # This file
 ```
+## Key Components
+### Backend (main.py)
+- init_db(): Initializes the SQLite database
+- parse_email(file_path): Parses an email file and stores data
+- get_parsed_emails(): Retrieves all parsed emails from the database
 
+### Frontend (app.py)
+- Streamlit interface for file upload and data display
+- Calls backend functions to process and retrieve email data
 
 ## Troubleshooting
 ---
