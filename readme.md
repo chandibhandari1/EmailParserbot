@@ -30,6 +30,7 @@ cd EmailParserbot
 ### Step2 :install virtual environment and activate it
 ---
 Create your own virtual env, if you already have one you can use the existing one by simply activating it. Here myenv1 is the name of your virtual environment
+
 ```bash python -m venv myenv1 ```
 
 step 2: activate virtual env
