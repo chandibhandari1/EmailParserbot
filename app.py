@@ -1,6 +1,9 @@
 # app.py (Streamlit Frontend)
 import streamlit as st
 import main
+import main
+main.init_db() 
+
 import sqlite3
 
 st.set_page_config(page_title="Email Parser", layout="wide")

@@ -74,7 +74,10 @@ EmailParserbot/
 │── main.py           # Contains all the parsing and database functions
 │── emails.db         # SQLite database (created after initialization)
 │── requirements.txt  # List of Python dependencies
-│── README.md         # This file
+│── README.md         # This fileProject documentation
+│── data/             # Folder for test data
+│   └── test_email.eml  # Sample email file for testing
+│── myenv1/             # Virtual environment folder (if using venv)
 ```
 ## Key Components
 ### Backend (main.py)
@@ -85,6 +88,14 @@ EmailParserbot/
 ### Frontend (app.py)
 - Streamlit interface for file upload and data display
 - Calls backend functions to process and retrieve email data
+
+## Dependencies
+The application requires the following Python libraries:
+```bash
+streamlit
+mail-parser
+sqlite3
+```
 
 ## Troubleshooting
 ---
