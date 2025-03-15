@@ -17,8 +17,13 @@ Python 3.7 or higher & pip
 ## Installation
 ---
 ### Step 1: Clone the Repository
+#### part a)clone repo
+Go to the terminal and past the following code.
 ``` bash
 git clone https://github.com/chandibhandari1/EmailParserbot.git
+```
+#### part b) go to the directory
+``` bash
 cd EmailParserbot
 ```
 
