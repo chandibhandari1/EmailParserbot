@@ -65,7 +65,13 @@ alternatively
 ```bash
 python -m streamlit run main.py
 ```
-
+## Troubleshooting
+. If you encounter a sqlite3.OperationalError, ensure you have write permissions in the directory.
+. For ModuleNotFoundError, verify that you've activated the virtual environment and installed all dependencies.
+## Future Enhancements
+* Add support for multiple email formats (e.g., .msg, .eml)
+* Implement email content analysis features
+* Create a user interface for easier interaction with the parser
 
 
 
